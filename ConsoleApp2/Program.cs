@@ -8,8 +8,14 @@ namespace ConsoleApp2
 
         {
             int firstNumber;
+            string userName;
 
-            Console.WriteLine("Enter a number between 1 and 100: ");
+            Console.WriteLine("Hello. What is your name?");
+            userName = ((Console.ReadLine()));
+
+
+            Console.Write("Hi " + userName);
+            Console.Write("! Enter a number between 1 and 100: ");
             firstNumber = int.Parse((Console.ReadLine()));
             if (firstNumber < 100 && firstNumber % 2 != 0)
             {
@@ -25,11 +31,10 @@ namespace ConsoleApp2
                 Console.WriteLine("Odd.");
             else if (firstNumber > 100 || firstNumber < 1)
                 Console.WriteLine("Please enter a positive number between 1 and 100.");
-            }
-
-         
         }
-    }
+            }
+        }
+    
         
             
 
